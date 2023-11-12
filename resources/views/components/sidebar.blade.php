@@ -20,18 +20,18 @@
 <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
     <div class="c-sidebar-brand d-lg-down-none">
         <a href="/">
-            <img class="c-sidebar-brand-full" src="{{ asset('assets/blk/img/Web/tecnologia_verde_3d_96.png#signet') }}"
+            <img class="c-sidebar-brand-full" src="{{ asset('assets/blk/img/logo_innclod_p.png#signet') }}"
                 width="32px" height="32px">
         </a>
         <a href="/">
             <b class="c-sidebar-brand-full"
-                style="padding-top: 5px!important; padding-left: 5px !important; font-size: 25px; color: white !important;">
-                GA • RNEC
+                style="padding-top: 5px!important; padding-left: 5px !important; font-size: 20px; color: white !important;">
+                INNCLODCRUD
             </b>
         </a>
         <a href="/">
             <img class="c-sidebar-brand-minimized"
-                src="{{ asset('assets/blk/img/Web/tecnologia_verde_3d_96.png#signet') }}" width="32px" height="32px">
+                src="{{ asset('assets/blk/img/logo_innclod.png#signet') }}" width="32px" height="32px">
         </a>
     </div>
     <ul class="c-sidebar-nav">
@@ -81,6 +81,12 @@
             </li>
         @endif
 
+        <li class="c-sidebar-nav-item">
+            <router-link :to="{ name: 'documents-index' }" class="c-sidebar-nav-link" title="Documentos">
+                <i class="fa-solid fa-file-lines c-sidebar-nav-icon"></i>
+                Documentos
+            </router-link>
+        </li>
     </ul>
     <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent"
         data-class="c-sidebar-minimized"></button>

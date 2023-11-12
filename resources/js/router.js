@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views_vue/Home.vue'
+import Documents from './views_vue/documents/index'
 import Users from './views_vue/admin/User'
 import Audits from './views_vue/admin/Audit'
 import NotFount from './components/NotFountComponent'
@@ -13,6 +14,9 @@ export default new Router({
 
         // PÁGINA DE INICIO
         {path: '/v/home', name: 'home', component: Home},
+
+        // DOCUMENTOS
+        {path: '/v/documents', name: 'documents-index', component: Documents},
 
 
         /// ADMINISTRACIÓN

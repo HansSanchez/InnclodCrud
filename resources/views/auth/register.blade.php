@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/Web/tecnología-verde-3d-32.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/logo_innclod_p.png') }}">
     <title>Registro de cuenta</title>
     <link rel="stylesheet" href="{{ asset('assets/blk/css/blk-login.css') }}">
     <link rel="stylesheet" href="{{ asset('css/columns.css') }}">
@@ -30,7 +30,7 @@
                             <div class="div-size-custom">
                                 <div class="row row-icon">
                                     <a href="/">
-                                        <img src="{{ asset('assets/img/Web/tecnologia_verde_3d_96.png') }}"
+                                        <img src="{{ asset('assets/img/logo_innclod.png') }}"
                                             alt="" srcset="">
                                     </a>
                                 </div>

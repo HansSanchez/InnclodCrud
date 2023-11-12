@@ -44,7 +44,7 @@ Route::group(['middleware' => ['auth']], function () {
         Voyager::routes();
     });
 
-    Route::group(['prefix' => 'g-environmental-rnec'], function () {
+    Route::group(['prefix' => 'innclod-crud'], function () {
 
         Route::group(['prefix' => 'home'], function () {
             Route::post('/permissions', [\App\Http\Controllers\HomeController::class, 'permissions']);
@@ -55,8 +55,26 @@ Route::group(['middleware' => ['auth']], function () {
             Route::post('/generateReport', [\App\Http\Controllers\AuditController::class, 'generateReport']);
         });
 
-        Route::group(['prefix' => 'delegations'], function () {
-            Route::get('/getDelegations', [\App\Http\Controllers\DelegationController::class, 'getDelegations']);
+        Route::group(['prefix' => 'processes'], function () {
+            Route::get('/getProcesses', [\App\Http\Controllers\ProProcesoController::class, 'getProcesses']);
+            Route::get('/getProcessesFilter', [\App\Http\Controllers\ProProcesoController::class, 'getProcessesFilter']);
+            Route::get('/getProcessPrefix', [\App\Http\Controllers\ProProcesoController::class, 'getProcessPrefix']);
+        });
+
+        Route::group(['prefix' => 'types'], function () {
+            Route::get('/getTypes', [\App\Http\Controllers\TipTipoController::class, 'getTypes']);
+            Route::get('/getTypesFilter', [\App\Http\Controllers\TipTipoController::class, 'getTypesFilter']);
+            Route::get('/getTypePrefix', [\App\Http\Controllers\TipTipoController::class, 'getTypePrefix']);
+        });
+
+        Route::group(['prefix' => 'documents'], function () {
+            Route::get('/getDocuments', [\App\Http\Controllers\DocDocumentoController::class, 'getDocuments']);
+            Route::get('/getCountDocuments', [\App\Http\Controllers\DocDocumentoController::class, 'getCountDocuments']);
+            Route::post('/store', [\App\Http\Controllers\DocDocumentoController::class, 'store']);
+            Route::get('/show/{doc_document}', [\App\Http\Controllers\DocDocumentoController::class, 'show']);
+            Route::post('/{doc_document}/update', [\App\Http\Controllers\DocDocumentoController::class, 'update']);
+            Route::delete('/{doc_document}/destroy', [\App\Http\Controllers\DocDocumentoController::class, 'destroy']);
+
         });
 
         Route::group(['prefix' => 'users'], function () {

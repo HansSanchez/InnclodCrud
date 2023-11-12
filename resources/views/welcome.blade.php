@@ -4,10 +4,10 @@
  <head>
      <meta charset="utf-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/blk/img/Web/tecnología-verde-3d-32.png') }}">
-     <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/Web/tecnología-verde-3d-32.png') }}">
+     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/blk/img/logo_innclod.png') }}">
+     <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/logo_innclod_p.png') }}">
      <title>
-         G • AMBIENTAL RNEC
+         InnclodCrud
      </title>
      <!--     Fonts and icons     -->
      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -20,7 +20,7 @@
  </head>
 
  <body class="index-page"
-     style="background: url('../../assets/blk/img/corazon.jpg');
+     style="background: url('../../assets/blk/img/blue_bg.png');
  background-size: 100% 100vh;
  background-repeat: no-repeat;">
      <!-- Navbar -->
@@ -28,13 +28,13 @@
          <div class="container">
              <div class="navbar-translate">
                  <a class="navbar-brand SoberanaSans-Black" href="/" rel="tooltip"
-                     title="Gestión Ambiental de la Registraduria Nacional del Estado Civil" data-placement="bottom"
+                     title="Innovación digital a la medida" data-placement="bottom"
                      target="_blank">
-                     <img src="{{ asset('assets/blk/img/Web/tecnologia_verde_3d_96.png') }}" width="48"
-                         height="48" srcset="">
-                     <span>G •</span> AMBIENTAL RNEC
+                     <img src="{{ asset('assets/blk/img/logo_innclod_p.png') }}" width="32"
+                         height="32" srcset="">
+                     <span>InnclodCrud</span>
                  </a>
-                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                      data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
                      aria-label="Toggle navigation">
                      <span class="navbar-toggler-bar bar1"></span>
@@ -47,10 +47,10 @@
                      <div class="row">
                          <div class="col-8 collapse-brand">
                              <a class="SoberanaSans-Black" style="font-size: 14px">
-                                 G • AMBIENTAL RNEC
+                                 InnclodCrud
                              </a>
                          </div>
-                         <div class="col-4 collapse-close text-right">
+                         <div class="text-right col-4 collapse-close">
                              <button type="button" class="navbar-toggler" data-toggle="collapse"
                                  data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
                                  aria-label="Toggle navigation">
@@ -102,9 +102,9 @@
                      <br>
                      <br>
                      <h1 class="text-white SoberanaSans-Black">
-                         <span style="font-size: 45px">G • AMBIENTAL RNEC</span>
+                         <span style="font-size: 45px">InnclodCrud</span>
                      </h1>
-                     <h3 class="SoberanaSans-Regular">Cada acción cuenta: pequeños gestos, grandes impactos.</h3>
+                     <h3 class="SoberanaSans-Regular">INNOVACIÓN Digital a la medida</h3>
                      <br>
                      <br>
                  </div>
@@ -348,7 +348,7 @@
                                          <span class="navbar-toggler-bar bar3"></span>
                                      </button>
                                      <div class="collapse navbar-collapse" id="example-navbar-icons">
-                                         <ul class="navbar-nav ml-auto">
+                                         <ul class="ml-auto navbar-nav">
                                              <li class="nav-item">
                                                  <a class="nav-link" href="#pablo"><i class="tim-icons icon-send"
                                                          aria-hidden="true"></i></a>
@@ -382,7 +382,7 @@
                              </nav>
                          </div>
                      </div>
-                     <h3 class="title mb-3">Navigation</h3>
+                     <h3 class="mb-3 title">Navigation</h3>
                  </div>
                  <div id="navbar">
                      <div class="navigation-example">
@@ -400,7 +400,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-primary">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item active">
                                              <a class="nav-link" href="#pablo">
                                                  <i class="tim-icons icon-world"></i> Discover
@@ -435,7 +435,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-info">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item active">
                                              <a class="nav-link" href="#pablo">
                                                  Discover
@@ -470,7 +470,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-success">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item active">
                                              <a class="nav-link" href="#pablo">
                                                  <i class="tim-icons icon-world"></i>
@@ -505,7 +505,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-warning">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item">
                                              <a class="nav-link" href="#pablo">
                                                  <i class="fab fa-facebook-square"></i>
@@ -545,7 +545,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-danger">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item">
                                              <a class="nav-link" href="#pablo">
                                                  <i class="fab fa-facebook-square"></i> Share
@@ -581,7 +581,7 @@
                                      </button>
                                  </div>
                                  <div class="collapse navbar-collapse" id="example-navbar-transparent">
-                                     <ul class="navbar-nav ml-auto">
+                                     <ul class="ml-auto navbar-nav">
                                          <li class="nav-item">
                                              <a class="nav-link" href="#pablo">
                                                  <i class="fab fa-facebook-square"></i> Facebook
@@ -612,7 +612,7 @@
                          <h3 class="mb-3">Navigation Tabs</h3>
                      </div>
                      <div class="row">
-                         <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+                         <div class="ml-auto mr-auto col-md-10 col-xl-6">
                              <div class="mb-3">
                                  <small class="text-uppercase font-weight-bold">With icons</small>
                              </div>
@@ -671,7 +671,7 @@
                                  </div>
                              </div>
                          </div>
-                         <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+                         <div class="ml-auto mr-auto col-md-10 col-xl-6">
                              <div class="mb-3">
                                  <small class="text-uppercase font-weight-bold">With text</small>
                              </div>
@@ -1006,24 +1006,24 @@
                          <h3 class="mb-5">Images</h3>
                          <div class="row">
                              <div class="col-sm-3 col-6">
-                                 <small class="d-block text-uppercase font-weight-bold mb-4">Image</small>
-                                 <img src="assets/img/ryan.jpg" alt="Rounded image" class="img-fluid rounded shadow"
+                                 <small class="mb-4 d-block text-uppercase font-weight-bold">Image</small>
+                                 <img src="assets/img/ryan.jpg" alt="Rounded image" class="rounded shadow img-fluid"
                                      style="width: 150px;">
                              </div>
                              <div class="col-sm-3 col-6">
-                                 <small class="d-block text-uppercase font-weight-bold mb-4">Circle Image</small>
+                                 <small class="mb-4 d-block text-uppercase font-weight-bold">Circle Image</small>
                                  <img src="assets/img/james.jpg" alt="Circle image"
-                                     class="img-fluid rounded-circle shadow" style="width: 150px;">
+                                     class="shadow img-fluid rounded-circle" style="width: 150px;">
                              </div>
-                             <div class="col-sm-3 col-6 mt-5 mt-sm-0">
-                                 <small class="d-block text-uppercase font-weight-bold mb-4">Raised</small>
+                             <div class="mt-5 col-sm-3 col-6 mt-sm-0">
+                                 <small class="mb-4 d-block text-uppercase font-weight-bold">Raised</small>
                                  <img src="assets/img/lora.jpg" alt="Raised image"
-                                     class="img-fluid rounded shadow-lg" style="width: 150px;">
+                                     class="rounded shadow-lg img-fluid" style="width: 150px;">
                              </div>
-                             <div class="col-sm-3 col-6 mt-5 mt-sm-0">
-                                 <small class="d-block text-uppercase font-weight-bold mb-4">Circle Raised</small>
+                             <div class="mt-5 col-sm-3 col-6 mt-sm-0">
+                                 <small class="mb-4 d-block text-uppercase font-weight-bold">Circle Raised</small>
                                  <img src="assets/img/mike.jpg" alt="Raised circle image"
-                                     class="img-fluid rounded-circle shadow-lg" style="width: 150px;">
+                                     class="shadow-lg img-fluid rounded-circle" style="width: 150px;">
                              </div>
                          </div>
                      </div>
@@ -1033,7 +1033,7 @@
                  <img src="assets/img/path5.png" class="path">
                  <img src="assets/img/path5.png" class="path path1">
                  <div class="container">
-                     <h3 class="title mb-5">Javascript components</h3>
+                     <h3 class="mb-5 title">Javascript components</h3>
                      <h4 class="mb-5">Modal</h4>
                      <div class="row" id="modals">
                          <div class="col-md-4">
@@ -1054,7 +1054,7 @@
                      </div>
                      <br />
                      <br />
-                     <h4 class="mb-5 mt-3">Datepicker</h4>
+                     <h4 class="mt-3 mb-5">Datepicker</h4>
                      <div class="row">
                          <div class="col-md-4">
                              <div class="datepicker-container">
@@ -1067,7 +1067,7 @@
                      </div>
                      <div class="row">
                          <div class="col-md-6">
-                             <h4 class="mb-5 mt-3">Popovers</h4>
+                             <h4 class="mt-3 mb-5">Popovers</h4>
                              <button type="button" class="btn btn-default btn-sm" data-container="body"
                                  data-original-title="Popover on Top" data-toggle="popover" data-placement="top"
                                  data-content="Here will be some very useful information about his popover.">
@@ -1092,7 +1092,7 @@
                              </button>
                          </div>
                          <div class="col-md-6">
-                             <h4 class="mb-5 mt-3">Tooltips</h4>
+                             <h4 class="mt-3 mb-5">Tooltips</h4>
                              <button type="button" class="btn btn-default btn-tooltip btn-sm" data-toggle="tooltip"
                                  data-placement="left" title="Tooltip on left" data-container="body"
                                  data-animation="true" data-delay="100">On left</button>
@@ -1117,11 +1117,11 @@
                              <h3>Carousel</h3>
                          </div>
                          <div class="row justify-content-between align-items-center">
-                             <div class="col-lg-5 mb-5 mb-lg-0 ">
+                             <div class="mb-5 col-lg-5 mb-lg-0 ">
                                  <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
-                                 <p class="text-white mt-4">Black Design comes with three pre-built pages to help you
+                                 <p class="mt-4 text-white">Black Design comes with three pre-built pages to help you
                                      get started faster. You can change the text and images and you're good to go.</p>
-                                 <a href="./docs/1.0/components/alerts.html" class="btn btn-warning mt-4">See all
+                                 <a href="./docs/1.0/components/alerts.html" class="mt-4 btn btn-warning">See all
                                      components</a>
                              </div>
                              <div class="col-lg-6">
@@ -1178,7 +1178,7 @@
                      </div>
                      <div class="blur-hover">
                          <a href="./docs/1.0/foundation/icons.html">
-                             <div class="icons-container blur-item on-screen mt-5">
+                             <div class="mt-5 icons-container blur-item on-screen">
                                  <!-- Center -->
                                  <i class="icon tim-icons icon-coins"></i>
                                  <!-- Right 1 -->
@@ -1211,10 +1211,10 @@
                      <div class="squares square-4"></div>
                      <div class="row row-grid justify-content-between align-items-center">
                          <div class="col-lg-6">
-                             <h3 class="display-3 text-white">A beautiful Black Design
+                             <h3 class="text-white display-3">A beautiful Black Design
                                  <span class="text-white">completed with examples</span>
                              </h3>
-                             <p class="text-white mb-3">The Design System comes with four pre-built pages to help you
+                             <p class="mb-3 text-white">The Design System comes with four pre-built pages to help you
                                  get started faster. You can change the text and images and you're good to go. More
                                  importantly, looking at them will give you a picture of what you can built with this
                                  powerful Bootstrap 4 Design System.</p>
@@ -1254,7 +1254,7 @@
                                              </div>
                                              <input type="text" class="form-control" placeholder="Password">
                                          </div>
-                                         <div class="form-check text-left">
+                                         <div class="text-left form-check">
                                              <label class="form-check-label">
                                                  <input class="form-check-input" type="checkbox">
                                                  <span class="form-check-sign"></span>
@@ -1318,8 +1318,8 @@
                      <br>
                      <br>
                      <br>
-                     <!-- <div class="row text-center mt-5">
-                 <div class="col-md-8 ml-auto mr-auto">
+                     <!-- <div class="mt-5 text-center row">
+                 <div class="ml-auto mr-auto col-md-8">
                      <h2>Want more?</h2>
                      <h5 class="description">We've just launched <a href="http://demos.creative-tim.com/black-kit-pro/presentation.html" target="_blank">BLK• Design System PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap 4 Design System.</h4>
                  </div>
@@ -1333,7 +1333,7 @@
                      <br>
                      <div class="row row-grid align-items-center my-md">
                          <div class="col-lg-6">
-                             <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
+                             <h3 class="mb-2 text-primary font-weight-light">Thank you for supporting us!</h3>
                              <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
                          </div>
                          <div class="col-lg-6 text-lg-center btn-wrapper">
@@ -1382,13 +1382,13 @@
              </div>
              <!--  End Modal -->
              <!-- Mini Modal -->
-             <div class="modal fade modal-mini modal-primary modal-mini" id="myModal1" tabindex="-1"
+             <div class="modal fade modal-mini modal-primary" id="myModal1" tabindex="-1"
                  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                  <div class="modal-dialog">
                      <div class="modal-content">
                          <div class="modal-header justify-content-center">
                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                 <i class="tim-icons icon-simple-remove text-white"></i>
+                                 <i class="text-white tim-icons icon-simple-remove"></i>
                              </button>
                              <div class="modal-profile">
                                  <i class="tim-icons icon-single-02"></i>
@@ -1412,14 +1412,14 @@
                      <div class="modal-content">
                          <div class="modal-header justify-content-center">
                              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                 <i class="tim-icons icon-simple-remove text-white"></i>
+                                 <i class="text-white tim-icons icon-simple-remove"></i>
                              </button>
-                             <div class="text-muted text-center ml-auto mr-auto">
+                             <div class="ml-auto mr-auto text-center text-muted">
                                  <h3 class="mb-0">Sign in with</h3>
                              </div>
                          </div>
                          <div class="modal-body">
-                             <div class="btn-wrapper text-center">
+                             <div class="text-center btn-wrapper">
                                  <a href="#" class="btn btn-neutral btn-icon">
                                      <img src="assets/img/github.svg">
                                  </a>
@@ -1427,11 +1427,11 @@
                                      <img src="assets/img/google.svg">
                                  </a>
                              </div>
-                             <div class="text-center text-muted mb-4 mt-3">
+                             <div class="mt-3 mb-4 text-center text-muted">
                                  <small>Or sign in with credentials</small>
                              </div>
                              <form role="form">
-                                 <div class="form-group mb-3">
+                                 <div class="mb-3 form-group">
                                      <div class="input-group input-group-alternative">
                                          <div class="input-group-prepend">
                                              <span class="input-group-text">
@@ -1451,7 +1451,7 @@
                                          <input class="form-control" placeholder="Password" type="password">
                                      </div>
                                  </div>
-                                 <div class="form-check mt-3">
+                                 <div class="mt-3 form-check">
                                      <label class="form-check-label">
                                          <input class="form-check-input" type="checkbox" checked>
                                          <span class="form-check-sign"></span>
@@ -1459,7 +1459,7 @@
                                      </label>
                                  </div>
                                  <div class="text-center">
-                                     <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                     <button type="button" class="my-4 btn btn-primary">Sign in</button>
                                  </div>
                              </form>
                          </div>
@@ -1474,142 +1474,11 @@
                      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 full-center pl-pr-45">
                          <div class="row">
                              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                 <img src="{{ asset('assets/blk/img/Web/tecnologia_verde_3d_96.png') }}" width="72"
+                                 <img src="{{ asset('assets/blk/img/logo_innclod.png') }}" width="100%"
                                      height="72" srcset="">
-                                 <span class="text-white SoberanaSans-Black">
-                                     G • AMBIENTAL RNEC
-                                 </span>
                              </div>
                              <hr size="2" color="white" style="width: 100% !important">
-                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 size_logo">
-                                 <img src="{{ asset('assets/blk/img/Web/logo_rnec-3.png') }}" srcset="">
-                             </div>
-                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                 <h4 class="title SoberanaSans-Black">Síguenos:</h4>
-                                 <div class="btn-wrapper profile follow_us">
-                                     <a target="_blank" href="/"
-                                         class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip"
-                                         data-original-title="Follow us">
-                                         <i class="fab fa-twitter"></i>
-                                     </a>
-                                     <a target="_blank" href="/"
-                                         class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip"
-                                         data-original-title="Like us">
-                                         <i class="fab fa-facebook-square"></i>
-                                     </a>
-                                     <a target="_blank" href="/"
-                                         class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip"
-                                         data-original-title="Follow us">
-                                         <i class="fab fa-dribbble"></i>
-                                     </a>
-                                 </div>
-                             </div>
                          </div>
-                     </div>
-                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 full-center pr-100">
-                         <ul class="nav SoberanaSans-Regular text-left">
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-                                 Av. Calle 26 n.º 51-50, CAN, Bogotá, Colombia. CP: 111321
-                             </li>
-                             <br>
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-                                 Horario de atención correspondencia de lunes a viernes de 8:00 a. m. a 4:30 p. m. en
-                                 jornada continua (Sede CAN av. calle 26 nº 51-50)
-                             </li>
-                             <br>
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                                 Conmutador: +57 (601) 220 2880
-                             </li>
-                             <br>
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-mobile" style="color: #ffffff;"></i>
-                                 Línea móvil: 305 7342003 y línea gratuita nacional: 018000 931026 de lunes a sábado de
-                                 8:00 a.m. a 5:00 p.m.
-                             </li>
-                             <br>
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
-                                 Centro de Atención e Información Ciudadana (CAIC): Carrera 7.ª n.º 32-12, Piso 2, local
-                                 205, Centro Comercial San Martín.
-                                 Horario: 8:00 a. m. a 4:00 p. m., en jornada continua
-                             </li>
-                             <br>
-                             <li class="nav-item">
-                                 <i class="fa-solid fa-copyright" style="color: #ffffff;"></i>
-                                 Copyright 2022 - Todos los derechos reservados Registraduría Nacional del Estado Civil.
-                             </li>
-                         </ul>
-                     </div>
-                     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 full-center">
-                         <ul class="nav column-list SoberanaSans-Regular text-left">
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://www.registraduria.gov.co/Politicas-de-privacidad-y-condiciones-de-uso.html">Políticas
-                                     de privacidad</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://correo.registraduria.gov.co/owa/auth/logon.aspx?replaceCurrent=1&url=https%3a%2f%2fcorreo.registraduria.gov.co%2fowa">Correo
-                                     institucional</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer" href="https://www.office.com/">Correo institucional (Office
-                                     365)</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="http://translate.google.com/translate?sl=es&tl=en&u=https%3A%2F%2Fwww.registraduria.gov.co%2F">Translate</a>
-                             </li>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://www.registraduria.gov.co/Politicas-de-privacidad-y-condiciones-de-uso.html">Condiciones
-                                     de uso</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer" href="https://www.registraduria.gov.co/?page=plan">Mapa del
-                                     sitio</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://gestordocumental.registraduria.gov.co:4450/">Contáctenos</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://www.registraduria.gov.co/-Biblioteca-.html">Biblioteca</a>
-                             </li>
-                             <li>
-                                 <a class="link_footer" href="https://intranet.registraduria.gov.co/">Intranet</a>
-                             </li>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://wsp.registraduria.gov.co/normatividad/">Normativa</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://www.registraduria.gov.co/Notificaciones-judiciales-4655.html">Correos
-                                     judiciales</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer"
-                                     href="https://gestordocumental.registraduria.gov.co:4450/">PQRSDC</a>
-                             </li>
-                             <br>
-                             <li>
-                                 <a class="link_footer" href="https://www.registraduria.gov.co/Glosario.html">Glosario
-                                 </a>
-                             </li>
-                         </ul>
                      </div>
                  </div>
              </div>

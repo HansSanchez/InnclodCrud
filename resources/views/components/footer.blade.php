@@ -1,7 +1,7 @@
-<footer class="c-footer bg-dark text-white">
+<footer class="text-white c-footer bg-dark">
     <div>
         <small>
-            <a href="#"><b class="text-white">REGISTRADURIA NACIONAL DEL ESTADO CIVIL</b></a>
+            <a href="#"><b class="text-white">INNCLODCRUD</b></a>
             <b>&copy; {{ now()->format('Y') }}</b>
         </small>
     </div>

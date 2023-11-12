@@ -1,62 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Proyecto InnclodCrud Laravel 8.4 con Vue.js 2.6
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto está construido con Laravel 8 y Vue.js. Aquí encontrarás las instrucciones detalladas para la instalación y configuración.
 
-## About Laravel
+## Requisitos Previos
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Asegúrate de tener instalado lo siguiente:
+- PHP (versión 7.3 o superior)
+- Composer
+- Node.js (versión v18.17.1 o superior) y npm (versión v9.6.7 o superior)
+- Un servidor de base de datos (MySQL)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalación y Configuración
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Paso 1: Clonar el Repositorio
+Clona el repositorio en tu máquina local usando:
+`git clone git@github.com:HansSanchez/InnclodCrud.git`
+`cd InnclodCrud`
 
-## Learning Laravel
+### Paso 2: Configuración del Entorno
+Copie el archivo `.env.example` a `.env`:
+`cp .env.example .env`
+Una vez ya tenga copiado el archivo de las variables de entorno, por favor ajuste las credenciales de la base de datos en la cual va a conectar la prueba
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Paso 3: Instalación de las dependencias de Laravel
+Instala todas las dependencias de PHP requeridas por Laravel:
+`composer install`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Paso 4: Configuración de herramienta Voyager
+Instala todas las dependencias de PHP requeridas por Laravel:
+`php artisan voyager:install --with-dummy`
 
-## Laravel Sponsors
+#### Paso 4.1 Credenciales
+email: admin@admin.com
+password: password
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+#### Paso 4.2 
+Ejecución o subida de las semillas necesarias para el uso de la aplicación
+`php artisan db:seed --class=VoyagerDatabaseSeeder`
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+### Paso 5: Generar Clave de Aplicación
+Genera la clave de la aplicación de Laravel:
+`php artisan key:generate`
 
-## Contributing
+### Paso 6: Instalar Vue.js
+Instale Vue.js y sus dependencias a través de npm install && con npm run dev compile los archivos js y css:
+`npm install && npm run dev`
+Tenga en cuenta que como la idea es visualizar el proyecto se propone npm run dev si se fuera a editar se recomienda en npm run watch para que este siempre activo escuchando los cambios en nuestro código, de igual manera es opcional.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Ejecutar el Proyecto
+Para ejecutar el proyecto en un servidor de desarrollo local:
+`php artisan serve`
+Visita `http://localhost:8000` en su navegador para ver la aplicación.
 
-## Code of Conduct
+## Conclusión
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Este archivo `README.md` proporciona una guía paso a paso para configurar un proyecto de Laravel 8 con Vue.js, cubriendo desde la clonación del repositorio hasta la compilación de los assets de Vue.js, adicionalmente al hacer uso de una plantilla se explica también la instalación y configuración de Voyager el cual es una herramienta para Laravel que facilita algunas tareas repetitivas como son la creación de usuarios, roles y la asignación de los permisos.

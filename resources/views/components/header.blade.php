@@ -1,22 +1,22 @@
-<header class="c-header c-header-light c-header-fixed bg-dark text-white c-header-with-subheader">
+<header class="text-white c-header c-header-light c-header-fixed bg-dark c-header-with-subheader">
     <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar"
         data-class="c-sidebar-show">
-        <i class="fas fa-bars c-icon text-white c-icon-lg"></i>
+        <i class="text-white fas fa-bars c-icon c-icon-lg"></i>
     </button>
     <div>
-        <a class="c-header-brand d-lg-none text-center justify-content-center" href="#">
-            <img src="{{ asset('assets/blk/img/Web/tecnologia_verde_3d_96.png') }}" width="32px" height="32px">
+        <a class="text-center c-header-brand d-lg-none justify-content-center" href="#">
+            <img src="{{ asset('assets/blk/img/logo_innclod.png') }}" width="32px" height="32px">
             <b
-                style="padding-top: 5px!important; padding-left: 5px !important; font-size: 25px; color: white !important;">
-                GA • RNEC
+                style="padding-top: 5px!important; padding-left: 5px !important; font-size: 20px; color: white !important;">
+                INNCLODCRUD
             </b>
         </a>
     </div>
     <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar"
         data-class="c-sidebar-lg-show" responsive="true">
-        <i class="fas fa-bars text-white c-icon c-icon-lg"></i>
+        <i class="text-white fas fa-bars c-icon c-icon-lg"></i>
     </button>
-    <ul class="c-header-nav ml-auto mr-4">
+    <ul class="ml-auto mr-4 c-header-nav">
         <li class="c-header-nav-item dropdown">
             <a class="c-header-nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                 aria-expanded="false">
@@ -36,32 +36,22 @@
                     @endif
                 </div>
             </a>
-            <div class="dropdown-menu dropdown-menu-right pt-0">
-                <div class="dropdown-header bg-light py-2">
+            <div class="pt-0 dropdown-menu dropdown-menu-right">
+                <div class="py-2 dropdown-header bg-light">
                     <strong>Mi cuenta</strong>
                 </div>
                 <span class="dropdown-item">
-                    <i class="fas fa-mail-bulk c-icon mr-2"></i>
+                    <i class="mr-2 fas fa-mail-bulk c-icon"></i>
                     @if (auth()->check())
                         {{ auth()->user()->email }}
                     @else
                         NO USER
                     @endif
                 </span>
-                @if (auth()->check())
-                    <span class="dropdown-item" data-toggle="modal" data-target="#UpdatePasswordUserModal">
-                        <i class="fas fa-user-lock mr-2"></i>
-                        Cambiar contraseña
-                    </span>
-                @endif
                 <a class="dropdown-item" href="{{ route('logout') }}">
-                    <i class="fas fa-sign-out-alt c-icon mr-2"></i>
+                    <i class="mr-2 fas fa-sign-out-alt c-icon"></i>
                     Cerrar sesión
                 </a>
-                {{--                <div class="dropdown-header bg-light py-2"> --}}
-                {{--                    <strong>Settings</strong> --}}
-                {{--                </div> --}}
-                {{--                <div class="dropdown-divider"></div> --}}
             </div>
         </li>
     </ul>

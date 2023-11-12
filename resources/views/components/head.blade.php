@@ -6,8 +6,8 @@
     <meta name="description" content="Control de Ingresos y Salidas del Grupo Espumados">
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
-    <title>G • AMBIENTAL RNEC</title>
-    <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/Web/tecnología-verde-3d-32.png') }}">
+    <title>InnclodCrud</title>
+    <link rel="icon" type="image/png" href="{{ asset('assets/blk/img/logo_innclod_p.png') }}">
     <meta name="msapplication-TileColor" content="#ffffff">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="{{asset('assets/plugins/sweetalert2/sweetalert2.min.css')}}">

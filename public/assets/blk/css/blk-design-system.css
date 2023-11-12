@@ -13098,8 +13098,10 @@ fieldset[disabled] .btn-link.active {
 
 .footer {
     padding: 50px 0;
-    border-top: 2px solid #3ad292;
-    background: radial-gradient(circle at 1% 1%, rgba(0,245,227,0.5), transparent 10%),radial-gradient(circle at 99% 99%, rgba(0,245,227,0.5), transparent 10%),radial-gradient(circle at 50% 50%, #002D55, #002D55 100%);}
+    border-top: 2px solid #FFB700;
+    /*background: radial-gradient(circle at 1% 1%, rgba(0,245,227,0.5), transparent 10%),radial-gradient(circle at 99% 99%, rgba(0,245,227,0.5), transparent 10%),radial-gradient(circle at 50% 50%, #002D55, #002D55 100%);}*/
+    background: radial-gradient(circle at 1% 1%, rgba(255, 255, 150, 0.5), transparent 10%),radial-gradient(circle at 99% 99%, rgba(255, 255, 150, 0.5), transparent 10%),radial-gradient(circle at 50% 50%, #002D55, #002D55 100%)
+}
 
 .full-center {
     display: flex;
@@ -18029,11 +18031,11 @@ textarea.form-control:active {
 
 .index-page .squares {
     animation: move-left-right 1s infinite;
-    background: #3ad292;
-    background: -webkit-linear-gradient(0deg, #3ad292 0%, #4ff5c3 100%);
-    background: -o-linear-gradient(0deg, #3ad292 0%, #4ff5c3 100%);
-    background: -moz-linear-gradient(0deg, #3ad292 0%, #4ff5c3 100%);
-    background: linear-gradient(0deg, #3ad292 0%, #4ff5c3 100%);
+    background: #FFB700;
+    background: -webkit-linear-gradient(0deg, #FFB700 0%, #FFFACD 100%);
+    background: -o-linear-gradient(0deg, #FFB700 0%, #FFFACD 100%);
+    background: -moz-linear-gradient(0deg, #FFB700 0%, #FFFACD 100%);
+    background: linear-gradient(0deg, #FFB700 0%, #FFFACD 100%);
     position: absolute;
     transition: 0.5s ease-out;
     overflow: hidden;
