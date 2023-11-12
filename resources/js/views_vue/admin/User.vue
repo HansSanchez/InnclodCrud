@@ -551,7 +551,7 @@ export default {
     },
     methods: {
         infiniteHandler($state) {
-            let api = "/g-environmental-rnec/users/getUsers";
+            let api = "/innclod-crud/users/getUsers";
             axios.get(api, { params: { page: this.page, search: this.searchInput } }).then(({ data }) => {
                 if (data.users.data.length > 0) {
                     this.role = data.role;
@@ -573,7 +573,7 @@ export default {
             this.changeType();
         },
         queryFilter($state) {
-            let api = "/g-environmental-rnec/users/getUsers";
+            let api = "/innclod-crud/users/getUsers";
             axios.get(api, {
                 params: {
                     search: this.searchInput,
@@ -592,7 +592,7 @@ export default {
             }).catch(error => (error.response ? this.response(error) : ""));
         },
         createOrUpdate() {
-            let url = this.update ? '/g-environmental-rnec/users/' + this.id + '/update' : '/g-environmental-rnec/users/store';
+            let url = this.update ? '/innclod-crud/users/' + this.id + '/update' : '/innclod-crud/users/store';
             axios.post(url, this.FormUser)
                 .then(response => {
                     this.alerts(response.data); // Es un método personalizado para mostrar una alerta con un SweetAlert
@@ -628,7 +628,7 @@ export default {
         uploadImportUsers() {
             let FormImportUsers = new FormData();
             for (let key in this.FormImportUsers) FormImportUsers.append(key, this.FormImportUsers[key])
-            let api = "/g-environmental-rnec/users/importUsers";
+            let api = "/innclod-crud/users/importUsers";
             axios.post(api, FormImportUsers).then(response => {
                 console.log(response);
                 window.toastr.success(response.data.msg, { timeOut: 5000 });
@@ -646,7 +646,7 @@ export default {
         photoUpload() {
             let FormPhoto = new FormData();
             for (let key in this.FormPhoto) FormPhoto.append(key, this.FormPhoto[key])
-            let api = "/g-environmental-rnec/users/" + this.selectedUser.id + '/photoUpload';
+            let api = "/innclod-crud/users/" + this.selectedUser.id + '/photoUpload';
             axios.post(api, FormPhoto).then(response => {
                 window.toastr.success(response.data.msg, { timeOut: 5000 });
                 if (!response.data.new) this.list.splice(this.list.findIndex(element => (element.id === response.data.user.id)), 1);
@@ -671,17 +671,17 @@ export default {
             }
         },
         setPermissions() {
-            axios.post("/g-environmental-rnec/home/permissions")
+            axios.post("/innclod-crud/home/permissions")
                 .then(response => this.permissions = response.data)
                 .catch(errors => console.log(errors));
         },
         setDelegations(search) { // Función para traer las sociedades en un v-select
-            axios.get('/g-environmental-rnec/delegations/getDelegations', { params: { search: search } })
+            axios.get('/innclod-crud/delegations/getDelegations', { params: { search: search } })
                 .then(res => this.delegations = res.data.data)
                 .catch(error => (error.response) ? this.response(error) : '');
         },
         setRoles(search) { // Función para traer los roles en un v-select
-            axios.get('/g-environmental-rnec/users/getRoles', { params: { search: search } })
+            axios.get('/innclod-crud/users/getRoles', { params: { search: search } })
                 .then(res => this.roles = res.data.data)
                 .catch(error => (error.response) ? this.response(error) : '');
         },

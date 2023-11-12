@@ -222,7 +222,7 @@ export default {
     },
     methods: {
         infiniteHandler($state) {
-            let api = "/g-environmental-rnec/audits/getAudits";
+            let api = "/innclod-crud/audits/getAudits";
             axios.get(api, { params: { page: this.page, search: this.searchInput } })
                 .then(({ data }) => {
                     if (data.audits.data.length > 0) {
@@ -297,7 +297,7 @@ export default {
                     Form = this.year;
                     break;
             }
-            const url = '/g-environmental-rnec/audits/generateReport';
+            const url = '/innclod-crud/audits/generateReport';
             if (Form !== null) axios.post(url, Form).then(this.responseReport).catch(error => window.toastr.warning(error, { timeOut: 2000 }));
             else window.toastr.error('No se aplicó ningún filtro', { timeOut: 5000 });
         },
@@ -332,7 +332,7 @@ export default {
             }
         },
         getPermissions() {
-            axios.post("/g-environmental-rnec/home/permissions")
+            axios.post("/innclod-crud/home/permissions")
                 .then(response => this.permissions = response.data)
                 .catch(errors => console.log(errors));
         },

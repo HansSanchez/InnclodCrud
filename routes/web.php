@@ -46,13 +46,20 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::group(['prefix' => 'innclod-crud'], function () {
 
+        // GRUPO DE RUTAS PARA MÓDULO DE "PERMISOS"
         Route::group(['prefix' => 'home'], function () {
             Route::post('/permissions', [\App\Http\Controllers\HomeController::class, 'permissions']);
         });
 
+        // GRUPO DE RUTAS PARA MÓDULO DE "SEGUIMIENTOS" (RE NOMBRADO VISUALMENTE)
         Route::group(['prefix' => 'audits'], function () {
             Route::get('/getAudits', [\App\Http\Controllers\AuditController::class, 'getAudits']);
             Route::post('/generateReport', [\App\Http\Controllers\AuditController::class, 'generateReport']);
+        });
+
+        // GRUPO DE RUTAS PARA MÓDULO DE "DELEGACIONES"
+        Route::group(['prefix' => 'delegations'], function () {
+            Route::get('/getDelegations', [\App\Http\Controllers\DelegationController::class, 'getDelegations']);
         });
 
         Route::group(['prefix' => 'processes'], function () {
